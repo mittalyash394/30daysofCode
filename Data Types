@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i = 4;
+    double d = 4.0;
+    char s[] = "HackerRank ";
+
+    
+    // Declare second integer, double, and String variables.
+    int n; 
+    double n2; 
+    char ch[100];
+    
+    // Read and save an integer, double, and String to your variables.
+    scanf("%d %lf", &n, &n2);
+    getchar();
+    fgets(ch,sizeof(ch),stdin);
+    // Print the sum of both integer variables on a new line.
+    printf("%d\n", i+n);
+    // Print the sum of the double variables on a new line.
+    printf("%.1lf\n", d+n2);
+
+    // Concatenate and print the String variables on a new line
+    // The 's' variable above should be printed first.
+    printf("%s%s",s, ch);
+    return 0;
